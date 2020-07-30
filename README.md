@@ -7,28 +7,38 @@ Measurements are in milliseconds (ms).
 
 # Installation 
 
-`npm i performance --save`
+`npm i runtime-performance --save`
 
-# Usage
+# Usage 
+Example 1
 ```
-import { performance } from 'performance'
+import {performanceStart, performanceEnd, performanceTime} from 'runtime-performance';
 
-time = {start, end};
-performanceStart(time);
-delay(1000);
-performanceTime = performanceEnd(time);
-console.log("Execution time = ", performanceTime);
+runtime = {start:0, end:0};
+performanceStart(runtime);
+
+#
+# your code block to measure: delay(1000);
+#
+
+performanceTime = performanceEnd(runtime);
+console.log("Execution time = " + performanceTime);
+
 ```
 
-OR
-
+Example 2
 ```
-import { performance } from 'performance'
+import {performanceStart, performanceEnd, performanceTime} from 'runtime-performance';
 
-time = {start, end};
-performanceStart(time);
-delay(1000);
-performanceEnd(time);
+runtime = {start:0, end:0};
 
-console.log("Execution time = ", performanceTime(time));
+performanceStart(runtime);
+
+#
+# your code block to measure: delay(1000);
+#
+
+performanceEnd(runtime);
+
+console.log("Execution time = " + performanceTime(runtime));
 ```

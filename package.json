@@ -1,0 +1,27 @@
+{
+  "name": "runtime-performance",
+  "version": "1.0.1",
+  "description": "Measure the performance of your code.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Victorhlab/performance.git"
+  },
+  "keywords": [
+    "Performance",
+    "measuring",
+    "execution",
+    "time",
+    "efficient",
+    "code"
+  ],
+  "author": "Victor Labuschagne",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Victorhlab/performance/issues"
+  },
+  "homepage": "https://github.com/Victorhlab/performance#readme"
+}
